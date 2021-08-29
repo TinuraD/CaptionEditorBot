@@ -1,19 +1,14 @@
 
-import logging
 from pyrogram import Client
 from pyrogram import filters
+from pyrogram.types.bots_and_keyboards import reply_keyboard_markup
+from pyrogram import idle, filters
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import Message
-
 from pyrogram.errors import RPCError
 
 import functools
 from typing import Callable, Coroutine, Dict, List, Tuple, Union
-
-logging.basicConfig(
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
-)
-
-LOGGER = logging.getLogger(__name__)
 
 BOT_TOKEN = "1968740850:AAHDWcM8aML8g9D55s0Ici3rROOdIV67em8"
 API_ID = "2288609"
@@ -121,3 +116,6 @@ Note Extras only work for admins in groups
     filters.command("help") & ~filters.private & ~filters.edited & ~filters.bot)    
 async def help(client, message):
     lol = await message.reply("Send /help in my inbox to get help")
+
+bot.start()
+idle()

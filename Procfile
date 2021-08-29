@@ -1,1 +1,1 @@
-worker: python3 ef_sender.py
+worker: python3 ef_bot.py

@@ -1,20 +1,20 @@
 {
   "name": "Caption Editor",
   "description": "Caption Editor Bot",
-  "repository": "https://github.com/UvinduBro/Anonymous-Sender",
+  "repository": "https://github.com/TinuraD/EF-Caption-Editor",
   "logo": "https://cdn.worldvectorlogo.com/logos/incognito-1.svg",
-  "keywords": ["telegram", "Anonymous Sender", "Hide sender","telegram bot"],
+  "keywords": ["captionbot", "caption editor", "anonymous sender"],
   "env": {
      "BOT_TOKEN": {
       "description": "Your Bot token from @Botfather",
       "value": ""
     },
     "API_ID": {
-      "description": "Your API_ID from https://my.telegram.org/apps ",
+      "description": "Get API_ID from https://my.telegram.org/apps ",
       "value": ""
     },
     "API_HASH": {
-      "description": "Your API_HASH from https://my.telegram.org/apps",
+      "description": "Get API_HASH from https://my.telegram.org/apps",
       "value": ""
     }
    },

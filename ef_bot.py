@@ -105,11 +105,15 @@ async def start(client, message):
 async def hulp(client, message):
     lol = await message.reply("""
 Caption Editor Help ❔
- • Forward or send any message to me to get it without forward tag.
+
+ • Forward or send any message to me, I will send it without forward tag.
+ • /send <text> - Send Messages like me.
  • /send <reply> - I will send replied message.
  • /edit <caption> <reply to media> - I will edit caption of replied media
-Note - In pm above message works for everyone. ✅I
-     - In a group, above commands only work for only admins. ❗️
+
+Note 📝
+• In pm above message works for everyone.
+• In a group, above commands only work for only admins.
 """)
 
 @bot.on_message(

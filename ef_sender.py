@@ -1,4 +1,3 @@
-
 from pyrogram import Client
 from pyrogram import filters
 from pyrogram.types.bots_and_keyboards import reply_keyboard_markup
@@ -93,10 +92,20 @@ async def loltime(client, message):
         await lol.edit(i)
         return
 
-@bot.on_message(
-    filters.command("start") & ~filters.edited & ~filters.bot)    
-async def lel(client, message):
-    lol = await message.reply("forward any file to get it without tag. \nCheck /help to know more")   
+@bot.on_message(filters.command(["start"]))
+async def start(client, message):
+    await message.reply_text(
+        text=f"I'm Anonymous Sender bot. Use /help to know more.",
+        disable_web_page_preview=True,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("Group", url="https://t.me/slplatform"),
+                    InlineKeyboardButton("Channel", url="https://t.me/dnews")
+                ]
+            ]
+        ),
+    )  
 
 @bot.on_message(
     filters.command("help") & filters.private & ~filters.edited & ~filters.bot)    

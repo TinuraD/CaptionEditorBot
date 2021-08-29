@@ -1,3 +1,6 @@
+
+import logging
+from pyrogram import Client
 from pyrogram import filters
 from pyrogram.types import Message
 
@@ -6,12 +9,18 @@ from pyrogram.errors import RPCError
 import functools
 from typing import Callable, Coroutine, Dict, List, Tuple, Union
 
+logging.basicConfig(
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
+)
+
+LOGGER = logging.getLogger(__name__)
+
 BOT_TOKEN = "1968740850:AAHDWcM8aML8g9D55s0Ici3rROOdIV67em8"
 API_ID = "2288609"
 API_HASH = "cf4904241728b994387a80302a1ec034"
 
 bot = Client(
-    "Tinura-Bot",
+    "Ef-Sender",
     bot_token=BOT_TOKEN,
     api_id=int(API_ID),
     api_hash=API_HASH

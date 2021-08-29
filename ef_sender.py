@@ -101,7 +101,7 @@ async def start(client, message):
             [
                 [
                     InlineKeyboardButton("Group", url="https://t.me/slplatform"),
-                    InlineKeyboardButton("Channel", callback_data="/help")
+                    InlineKeyboardButton("Channel", url="https://t.me/dnews")
                 ]
             ]
         ),

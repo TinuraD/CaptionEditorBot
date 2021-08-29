@@ -8,7 +8,7 @@ from pyrogram.errors import RPCError
 
 import functools
 
-BOT_TOKEN =
+BOT_TOKEN = ""
 API_ID = "2288609"
 API_HASH = "cf4904241728b994387a80302a1ec034"
 

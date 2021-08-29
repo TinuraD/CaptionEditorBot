@@ -10,7 +10,12 @@ BOT_TOKEN = "1968740850:AAHDWcM8aML8g9D55s0Ici3rROOdIV67em8"
 API_ID = "2288609"
 API_HASH = "cf4904241728b994387a80302a1ec034"
 
-bot = Client("bot", bot_token=BOT_TOKEN, api_hash=API_HASH, api_id=API_ID)
+bot = Client(
+    "Tinura-Bot",
+    bot_token=BOT_TOKEN,
+    api_id=int(API_ID),
+    api_hash=API_HASH
+)
 
 def is_admin(func):
     @functools.wraps(func)

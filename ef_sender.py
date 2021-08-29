@@ -95,13 +95,13 @@ async def loltime(client, message):
 @bot.on_message(filters.command(["start"]))
 async def start(client, message):
     await message.reply_text(
-        text=f"I'm Anonymous Sender bot. Use /help to know more.",
+        text=f"I'm [Anonymous Sender](https://t.me/efsenderbot) bot. Use /help to know more.",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton("Group", url="https://t.me/slplatform"),
-                    InlineKeyboardButton("Channel", url="https://t.me/dnews")
+                    InlineKeyboardButton("Channel", callback_data="/help")
                 ]
             ]
         ),

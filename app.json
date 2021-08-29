@@ -17,5 +17,10 @@
       "description": "Get API_HASH from https://my.telegram.org/apps",
       "value": ""
     }
-    ]
+   },
+   "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
 }

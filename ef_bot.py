@@ -94,7 +94,7 @@ async def start(client, message):
             [
                 [
                     InlineKeyboardButton("Join Group", url="https://t.me/slplatform"),
-                    InlineKeyboardButton("Join Channel", url="https://t.me/dnews")
+                    InlineKeyboardButton("Join Channel", url="https://t.me/efbots")
                 ]
             ]
         ),

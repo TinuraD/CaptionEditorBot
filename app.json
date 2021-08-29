@@ -2,11 +2,11 @@
   "name": "Caption Editor",
   "description": "Caption Editor Bot",
   "repository": "https://github.com/TinuraD/EF-Caption-Editor",
-  "logo": "https://cdn.worldvectorlogo.com/logos/incognito-1.svg",
+  "logo": "https://user-images.githubusercontent.com/87059430/131252217-e42cef95-70d6-45fc-abf8-ac4562627490.png",
   "keywords": ["captionbot", "caption editor", "anonymous sender"],
   "env": {
      "BOT_TOKEN": {
-      "description": "Your Bot token from @Botfather",
+      "description": "Get your Bot token from @Botfather",
       "value": ""
     },
     "API_ID": {
@@ -17,10 +17,5 @@
       "description": "Get API_HASH from https://my.telegram.org/apps",
       "value": ""
     }
-   },
-   "buildpacks": [
-    {
-      "url": "heroku/python"
-    }
-  ]
+    ]
 }

@@ -1,15 +1,11 @@
 from pyrogram import Client
 from pyrogram import filters
-from pyrogram.types.bots_and_keyboards import reply_keyboard_markup
 from pyrogram import idle, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import Message
 from pyrogram.errors import RPCError
-
 import functools
-
 from vars import var
-
 
 bot = Client('EF-Caption',
                   api_id=var.API_ID,
@@ -93,8 +89,8 @@ async def loltime(client, message):
 @bot.on_message(filters.command(["start"]))
 async def start(client, message):
     await message.reply_text(
-        text=f"I'm [Anonymous Sender](https://t.me/efsenderbot) bot. Use /help to know more.",
-        disable_web_page_preview=True,
+        text=f"I'm [Caption Editor](https://t.me/efcaptionbot) bot. I can edit captions of any media and anonymize any message. Use /help to know more.",
+        disable_web_page_preview=False,
         reply_markup=InlineKeyboardMarkup(
             [
                 [

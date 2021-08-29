@@ -10,8 +10,7 @@ from vars import var
 bot = Client('EF-Caption',
                   api_id=var.API_ID,
                   api_hash=var.API_HASH,
-                  bot_token=var.BOT_TOKEN,
-                  plugins=dict(root="plugins"))
+                  bot_token=var.BOT_TOKEN)
 
 def is_admin(func):
     @functools.wraps(func)

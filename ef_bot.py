@@ -93,8 +93,8 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Group", url="https://t.me/slplatform"),
-                    InlineKeyboardButton("Channel", url="https://t.me/dnews")
+                    InlineKeyboardButton("Join Group", url="https://t.me/slplatform"),
+                    InlineKeyboardButton("Join Channel", url="https://t.me/dnews")
                 ]
             ]
         ),
@@ -104,19 +104,18 @@ async def start(client, message):
     filters.command("help") & filters.private & ~filters.edited & ~filters.bot)    
 async def hulp(client, message):
     lol = await message.reply("""
-Help of Anon Sender
-Forward any message to me to get it without forward tag
-Extras:
-  - /send <reply> : Sends Given text by bot
-  - /send <reply> : Sends given message by bot
-  - /edit <caption> <reply to media> : Edit caption of replied media
-Note Extras only work for admins in groups
+Caption Editor Help ❔
+ • Forward or send any message to me to get it without forward tag.
+ • /send <reply> - I will send replied message.
+ • /edit <caption> <reply to media> - I will edit caption of replied media
+Note - In pm above message works for everyone. ✅I
+     - In a group, above commands only work for only admins. ❗️
 """)
 
 @bot.on_message(
     filters.command("help") & ~filters.private & ~filters.edited & ~filters.bot)    
 async def help(client, message):
-    lol = await message.reply("Send /help in my inbox to get help")
+    lol = await message.reply("Send /help in my inbox to get help 😁")
 
 bot.start()
 idle()

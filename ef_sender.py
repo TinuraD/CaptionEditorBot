@@ -8,16 +8,14 @@ from pyrogram.errors import RPCError
 
 import functools
 
-BOT_TOKEN = ""
-API_ID = "2288609"
-API_HASH = "cf4904241728b994387a80302a1ec034"
+from vars import var
 
-bot = Client(
-    "Ef-Sender",
-    bot_token=BOT_TOKEN,
-    api_id=int(API_ID),
-    api_hash=API_HASH
-)
+
+bot = Client('EF-Caption',
+                  api_id=var.API_ID,
+                  api_hash=var.API_HASH,
+                  bot_token=var.BOT_TOKEN,
+                  plugins=dict(root="plugins"))
 
 def is_admin(func):
     @functools.wraps(func)

@@ -6,6 +6,7 @@ from pyrogram.types import Message
 from pyrogram.errors import RPCError
 import functools
 from vars import var
+from config import API_HASH, API_ID, BOT_TOKEN
 
 bot = Client('EF-Caption',
                   api_id=var.API_ID,

@@ -8,9 +8,9 @@ import functools
 from config import API_HASH, API_ID, BOT_TOKEN
 
 bot = Client('EF-Caption',
-                  api_id=var.API_ID,
-                  api_hash=var.API_HASH,
-                  bot_token=var.BOT_TOKEN)
+                  api_id=API_ID,
+                  api_hash=API_HASH,
+                  bot_token=BOT_TOKEN)
 
 def is_admin(func):
     @functools.wraps(func)

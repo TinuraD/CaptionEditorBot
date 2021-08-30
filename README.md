@@ -9,11 +9,11 @@
 ## Deploy your own bot here.
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TinuraD/EF-Caption-Editor.git)
 
+## Credits
+- [DaisyX AnonymousSender](https://github.com/TeamDaisyX/AnonymousSender)
+- [Uvindu Bro](https://github.com/UvinduBro)
+
 ## Contributors
 
 - Tinura Dinith <a href="https://github.com/TinuraD"><img src="https://img.shields.io/badge/TinuraD-107D8D?logo=github"></a>
 
-
-## Credits
-- [DaisyX AnonymousSender](https://github.com/TeamDaisyX/AnonymousSender)
-- [Uvindu Bro](https://github.com/UvinduBro)

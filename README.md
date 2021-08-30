@@ -11,7 +11,6 @@
 
 ## Credits
 - [DaisyX AnonymousSender](https://github.com/TeamDaisyX/AnonymousSender)
-- [Uvindu Bro](https://github.com/UvinduBro)
 
 ## Contributors
 

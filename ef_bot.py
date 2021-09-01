@@ -5,12 +5,11 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import Message
 from pyrogram.errors import RPCError
 import functools
-from config import API_HASH, API_ID, BOT_TOKEN
 
 bot = Client('EF-Caption',
-                  api_id=API_ID,
-                  api_hash=API_HASH,
-                  bot_token=BOT_TOKEN)
+                  api_id=int(os.getenv("API_ID")),
+                  api_hash=os.getenv("API_HASH"),
+                  bot_token=os.getenv("BOT_TOKEN"))
 
 def is_admin(func):
     @functools.wraps(func)

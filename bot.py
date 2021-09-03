@@ -93,8 +93,8 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Join Group", url="https://t.me/slplatform"),
-                    InlineKeyboardButton("Join Channel", url="https://t.me/SL_bot_zone")
+                    InlineKeyboardButton("Join Channel", url="https://t.me/szbots"),
+                    InlineKeyboardButton("Join Group", url="https://t.me/slplatform")
                 ]
             ]
         ),

@@ -7,7 +7,7 @@ from pyrogram.types import Message
 from pyrogram.errors import RPCError
 import functools
 
-bot = Client('EF-Caption',
+bot = Client('Caption-Bot',
                   api_id=int(os.getenv("API_ID")),
                   api_hash=os.getenv("API_HASH"),
                   bot_token=os.getenv("BOT_TOKEN"))
@@ -88,13 +88,13 @@ async def loltime(client, message):
 @bot.on_message(filters.command(["start"]))
 async def start(client, message):
     await message.reply_text(
-        text=f"I'm [Caption Editor](https://t.me/efcapeditbot) bot. I can edit captions of any media and anonymize any message. Use /help to know more.",
+        text=f"I'm [Caption Editor](http://t.me/szcaptionbot) bot. I can edit captions of any media and anonymize any message. Use /help to know more.",
         disable_web_page_preview=False,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton("Join Group", url="https://t.me/slplatform"),
-                    InlineKeyboardButton("Join Channel", url="https://t.me/efbots")
+                    InlineKeyboardButton("Join Channel", url="https://t.me/SL_bot_zone")
                 ]
             ]
         ),

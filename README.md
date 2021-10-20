@@ -1,4 +1,4 @@
-# Caption Editor - Telegram Bot
+# Caption Editor ✏️ - Telegram Bot
 - Pyrogram based caption editor and anonymous sender telegram bot.
 - Can be found as [@szcovidbot](http://t.me/szcaptionbot) in telegram.
 - This is a simplified version of [DaisyX AnonymousSender](https://github.com/TeamDaisyX/AnonymousSender)

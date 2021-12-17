@@ -45,8 +45,7 @@ def get_text(message: Message) -> [None, str]:
         return None
 
 
-@bot.on_message(
-    filters.command("send") & ~filters.edited & ~filters.bot)
+@bot.on_message(filters.command("send"))
 @is_admin
 async def send(client, message):
     if message.reply_to_message:
